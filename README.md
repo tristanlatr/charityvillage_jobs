@@ -1,4 +1,4 @@
-# Charity Village job postings scraper
+# Charity Village Jobs Scraper
 
 This is a raw Scrapy project to scrape job postings from [charityvillage.com](https://charityvillage.com).  
 
@@ -7,7 +7,7 @@ See [Alt Job](https://github.com/tristanlatr/alt_job) fore more supported websit
 ## Install
 
 ```bash
-git clone 
+git clone https://github.com/tristanlatr/charityvillage_jobs.git
 cd charityvillage_jobs
 python3 setup.py install
 ```
