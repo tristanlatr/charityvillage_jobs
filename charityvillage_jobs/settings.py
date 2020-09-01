@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from shutil import which
 
 # Scrapy settings for quotesbot project
 #
@@ -9,17 +10,35 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'quotesbot'
+BOT_NAME = 'charityvillage_jobs'
 
-SPIDER_MODULES = ['quotesbot.spiders']
-NEWSPIDER_MODULE = 'quotesbot.spiders'
+SPIDER_MODULES = ['charityvillage_jobs.spiders']
 
+DOWNLOAD_DELAY=5
+COOKIES_ENABLED=False
+
+SPIDER_CONTRACTS = {
+    'charityvillage_jobs.contracts.WithSelenium': 10,
+    'charityvillage_jobs.contracts.ScrapeNotNone': 10,
+    'charityvillage_jobs.contracts.ReturnsValidSelectorList': 10,
+    'charityvillage_jobs.contracts.ReturnsValidLink': 10,
+    'charityvillage_jobs.contracts.AutoFillJobUrl': 10,
+}
+
+SELENIUM_DRIVER_NAME = 'chrome'
+SELENIUM_DRIVER_EXECUTABLE_PATH = which('chromedriver')
+SELENIUM_DRIVER_ARGUMENTS=[]
+SELENIUM_DRIVER_ARGUMENTS=['--headless'] 
+DOWNLOADER_MIDDLEWARES = {
+                'charityvillage_jobs.middlewares.SeleniumMiddleware': 800
+            }
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'quotesbot (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+# Required False for charityvillage test url 
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
