@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>charityvillage_jobs.scrape : API documentation</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <a href="https://github.com/tristanlatr/charityvillage_jobs">charityvillage_jobs</a> API Documentation
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="showPrivate">
+      <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+    </div>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1 class="module"><code>charityvillage_jobs.scrape</code> <small>module documentation</small></h1>
+
+        <span id="partOf">
+          Part of <code><a href="charityvillage_jobs.html" class="code" data-type="Package">charityvillage_jobs</a></code>
+          <a href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/scrape.py">View Source</a>
+          
+        </span>
+      </div>
+
+      <div class="extrasDocstring">
+        
+      </div>
+
+      <div class="moduleDocstring">
+        <div><p class="pre">Wrapper arround scrapy system and scrapy related helpers.  
+
+
+This submodule is only used in tests contracts AutoFillJobUrl.  
+But it can be used anywhere else.  </p></div>
+      </div>
+
+      <div id="splitTables">
+        <table class="children sortable" id="id12">
+  
+  <tr class="variable">
+    
+    <td>Variable</td>
+    <td><a href="charityvillage_jobs.scrape.html#SCRAPY_SETTINGS_MODULE" class="code" data-type="Variable">SCRAPY_SETTINGS_MODULE</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><a href="charityvillage_jobs.scrape.html#get_settings" class="code" data-type="Function">get_settings</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><a href="charityvillage_jobs.scrape.html#get_all_scrapers" class="code" data-type="Function">get_all_scrapers</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><a href="charityvillage_jobs.scrape.html#scrape" class="code" data-type="Function">scrape</a></td>
+    <td><span>Wrap the crawling procress in multiprocessing thread.</span></td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><a href="charityvillage_jobs.scrape.html#_scrape" class="code" data-type="Function">_scrape</a></td>
+    <td><span>Launch the requested scraper with the configuration.</span></td>
+  </tr>
+</table>
+        
+
+          
+      </div>
+
+      <div id="childList">
+
+        <div class="basevariable">
+  
+  <a name="charityvillage_jobs.scrape.SCRAPY_SETTINGS_MODULE">
+    
+  </a>
+  <a name="SCRAPY_SETTINGS_MODULE">
+    
+  </a>
+  <div class="functionHeader">
+    SCRAPY_SETTINGS_MODULE =
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/scrape.py#L18">
+      
+      (source)
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div> (type: <code>str</code>)
+  </div>
+</div><div class="basefunction">
+  
+  <a name="charityvillage_jobs.scrape.get_settings">
+    
+  </a>
+  <a name="get_settings">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_settings():
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/scrape.py#L20">
+      
+      (source)
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="charityvillage_jobs.scrape.get_all_scrapers">
+    
+  </a>
+  <a name="get_all_scrapers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_all_scrapers():
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/scrape.py#L25">
+      
+      (source)
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="charityvillage_jobs.scrape.scrape">
+    
+  </a>
+  <a name="scrape">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    scrape(spider_cls_or_name, spider_kwargs={}, additionnal_settings=None):
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/scrape.py#L30">
+      
+      (source)
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p class="pre">Wrap the crawling procress in multiprocessing thread.  </p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  <a name="charityvillage_jobs.scrape._scrape">
+    
+  </a>
+  <a name="_scrape">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _scrape(spider_cls_or_name, spider_kwargs={}, additionnal_settings=None, scraped_data_result=None):
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/scrape.py#L44">
+      
+      (source)
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p class="pre">Launch the requested scraper with the configuration.  </p></div>
+  </div>
+</div>
+
+      </div>
+      <address>
+        <a href="index.html">API Documentation</a> for <a href="https://github.com/tristanlatr/charityvillage_jobs">charityvillage_jobs</a>, generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a> at 2020-10-27 19:36:24.
+      </address>
+
+    </div>
+
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

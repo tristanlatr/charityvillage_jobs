@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com : API documentation</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <a href="https://github.com/tristanlatr/charityvillage_jobs">charityvillage_jobs</a> API Documentation
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="showPrivate">
+      <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+    </div>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1 class="class"><code>charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com(<span title="scrapy.Spider">scrapy.Spider</span>)</code> <small>class documentation</small></h1>
+
+        <span id="partOf">
+          Part of <code><a href="charityvillage_jobs.html" class="code" data-type="Package">charityvillage_jobs</a>.<a href="charityvillage_jobs.spiders.html" class="code" data-type="Package">spiders</a>.<a href="charityvillage_jobs.spiders.charityvillage_com.html" class="code" data-type="Module">charityvillage_com</a></code>
+          <a href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/spiders/charityvillage_com.py#L11">View Source</a>
+          <a href="classIndex.html#charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com">(View In Hierarchy)</a>
+        </span>
+      </div>
+
+      <div class="extrasDocstring">
+        
+      </div>
+
+      <div class="moduleDocstring">
+        <div><p class="pre">Use SeleniumRequest because website require javascript</p></div>
+      </div>
+
+      <div id="splitTables">
+        <table class="children sortable" id="id16">
+  
+  <tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><a href="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.html#name" class="code" data-type="Class Variable">name</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><a href="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.html#allowed_domains" class="code" data-type="Class Variable">allowed_domains</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><a href="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.html#start_urls" class="code" data-type="Instance Variable">start_urls</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.html#start_requests" class="code" data-type="Method">start_requests</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.html#__init__" class="code" data-type="Method">__init__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><a href="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.html#load_full_jobs" class="code" data-type="Instance Variable">load_full_jobs</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><a href="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.html#load_all_pages" class="code" data-type="Instance Variable">load_all_pages</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><a href="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.html#selenium_wait_time" class="code" data-type="Instance Variable">selenium_wait_time</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.html#parse" class="code" data-type="Method">parse</a></td>
+    <td><span class="undocumented">No summary</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.html#get_jobs_list" class="code" data-type="Method">get_jobs_list</a></td>
+    <td><span>Arguments: - response: scrapy response object for the listing page</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.html#get_job_dict" class="code" data-type="Method">get_job_dict</a></td>
+    <td><span>Arguments: - selector: selector object of the job posting in the listing</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.html#parse_full_job_page" class="code" data-type="Method">parse_full_job_page</a></td>
+    <td><span class="undocumented">No summary</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.html#get_next_page_url" class="code" data-type="Method">get_next_page_url</a></td>
+    <td><span>Arguments: - response: scrapy response object for the listing page</span></td>
+  </tr>
+</table>
+        
+
+          
+      </div>
+
+      <div id="childList">
+
+        <div class="baseclassvariable">
+  
+  <a name="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.name">
+    
+  </a>
+  <a name="name">
+    
+  </a>
+  <div class="functionHeader">
+    name =
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/spiders/charityvillage_com.py#L14">
+      
+      (source)
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div> (type: <code>str</code>)
+  </div>
+</div><div class="baseclassvariable">
+  
+  <a name="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.allowed_domains">
+    
+  </a>
+  <a name="allowed_domains">
+    
+  </a>
+  <div class="functionHeader">
+    allowed_domains =
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/spiders/charityvillage_com.py#L15">
+      
+      (source)
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  <a name="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.start_urls">
+    
+  </a>
+  <a name="start_urls">
+    
+  </a>
+  <div class="functionHeader">
+    start_urls =
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/spiders/charityvillage_com.py#L16">
+      
+      (source)
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.start_requests">
+    
+  </a>
+  <a name="start_requests">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    start_requests(self):
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/spiders/charityvillage_com.py#L18">
+      
+      (source)
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, url=None, start_urls=None, load_full_jobs=(False), load_all_pages=(False), selenium_wait_time=20):
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/spiders/charityvillage_com.py#L25">
+      
+      (source)
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  <a name="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.load_full_jobs">
+    
+  </a>
+  <a name="load_full_jobs">
+    
+  </a>
+  <div class="functionHeader">
+    load_full_jobs =
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/spiders/charityvillage_com.py#L28">
+      
+      (source)
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  <a name="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.load_all_pages">
+    
+  </a>
+  <a name="load_all_pages">
+    
+  </a>
+  <div class="functionHeader">
+    load_all_pages =
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/spiders/charityvillage_com.py#L29">
+      
+      (source)
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  <a name="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.selenium_wait_time">
+    
+  </a>
+  <a name="selenium_wait_time">
+    
+  </a>
+  <div class="functionHeader">
+    selenium_wait_time =
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/spiders/charityvillage_com.py#L30">
+      
+      (source)
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.parse">
+    
+  </a>
+  <a name="parse">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    parse(self, response):
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/spiders/charityvillage_com.py#L32">
+      
+      (source)
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p class="pre">@with_selenium
+@url https://charityvillage.com/search/#results/5f4583ff061c57fc640eb1dc?job_type=-Unpaid+Volunteer+Position&amp;page_num=1&amp;kw=
+@returns items 20 20
+@scrape_not_none url title date_posted apply_before organisation location</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.get_jobs_list">
+    
+  </a>
+  <a name="get_jobs_list">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_jobs_list(self, response):
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/spiders/charityvillage_com.py#L91">
+      
+      (source)
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p class="pre">Arguments:  
+- response: scrapy response object for the listing page
+
+Return a Selector list.  
+The result will be automatically iterated in `parse()` method.  
+The items will be passed to `get_job_dict()`.
+
+@with_selenium
+@url https://charityvillage.com/search/#results/5f4583ff061c57fc640eb1dc?job_type=-Unpaid+Volunteer+Position&amp;page_num=1&amp;kw=
+@returns_valid_selectorlist</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.get_job_dict">
+    
+  </a>
+  <a name="get_job_dict">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_job_dict(self, selector):
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/spiders/charityvillage_com.py#L106">
+      
+      (source)
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p class="pre">Arguments:  
+- selector: selector object of the job posting in the listing  
+
+Return a dict {'url':'https://job-url' , 'title':'Job title', 'organisation':'My community' [...] }</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.parse_full_job_page">
+    
+  </a>
+  <a name="parse_full_job_page">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    parse_full_job_page(self, response, job_dict):
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/spiders/charityvillage_com.py#L122">
+      
+      (source)
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p class="pre">Arguments:  
+- response: scrapy response object for the job page 
+- job_dict: dict containing job raw data,  
+    this function must return a new Job() FROM this  
+    data and any other relevant info from the job page  
+
+This method is called by `parse()` method if load_full_jobs  
+Return a Job()  
+
+@with_selenium
+@auto_job_url charityvillage.com
+@scrape_not_none url title description organisation date_posted apply_before location
+@returns items 1 1  </p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="charityvillage_jobs.spiders.charityvillage_com.Scraper_charityvillage_com.get_next_page_url">
+    
+  </a>
+  <a name="get_next_page_url">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_next_page_url(self, response):
+    <a class="functionSourceLink" href="https://github.com/tristanlatr/charityvillage_jobs/tree/refs/heads/master/charityvillage_jobs/spiders/charityvillage_com.py#L141">
+      
+      (source)
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p class="pre">Arguments:  
+- response: scrapy response object for the listing page
+
+This method is called by `Scraper.parse()` method if load_all_pages  
+Return a URL string or None if there no more pages to load    
+
+@with_selenium
+@url https://charityvillage.com/search/#results/5f4583ff061c57fc640eb1dc?job_type=-Unpaid+Volunteer+Position&amp;page_num=1&amp;kw=
+@returns_valid_link</p></div>
+  </div>
+</div>
+
+      </div>
+      <address>
+        <a href="index.html">API Documentation</a> for <a href="https://github.com/tristanlatr/charityvillage_jobs">charityvillage_jobs</a>, generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a> at 2020-10-27 19:36:24.
+      </address>
+
+    </div>
+
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
