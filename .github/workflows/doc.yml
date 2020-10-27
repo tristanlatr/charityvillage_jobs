@@ -29,7 +29,7 @@ jobs:
                 --add-package=charityvillage_jobs \
                 --project-name=charityvillage_jobs \
                 --project-url=https://github.com/$GITHUB_REPOSITORY \
-                --html-viewsource-base https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_REF \
+                --html-viewsource-base https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA \
                 --make-html \
                 --html-output=./apidocs \
                 --project-base-dir "$(pwd)" \
