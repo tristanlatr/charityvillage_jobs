@@ -1,8 +1,6 @@
 name: publish-pydoctor-apidoc
 on:
-  push:
-    tags: *
-    branches: main
+  - push
 
 jobs:
 deploy:
